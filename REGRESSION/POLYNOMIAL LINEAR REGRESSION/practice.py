@@ -21,4 +21,11 @@ INTO POLYNOMIAL FEATURE THAN WE CAN USE THAT NEW DATA INTO THE MODEL PREDICT MET
 new_data_poly = poly_reg.transform(new_data)
 data_pred = model.predict(new_data_poly)
 
+'''
+WE CAN ALSO WRITE IT LIKE THIS:-
+new_data = poly_reg.fit_transform([[6.5]])
+data_pred = model.predict(new_data)
+print(data_pred)
+'''
+
 print(data_pred)
